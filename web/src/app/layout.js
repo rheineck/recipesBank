@@ -9,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className='bg-white'>
+      <body className='bg-white h-full'>
         <header className='h-20 bg-sky-700'>
           <button className='bg-none border-none'>
             <AlignJustify/>
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
           </button>
         </header>
         {children}
-        <footer className='h-20 bg-sky-700 font-roboto-400'>
+        <footer className='h-20 mb-0 bg-sky-700 font-roboto-400'>
           <span>2023 - Recipe Bank</span>
           <span>Feito por Raphael Gilioli Heineck</span>
         </footer>
