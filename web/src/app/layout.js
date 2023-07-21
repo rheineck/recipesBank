@@ -1,5 +1,6 @@
 import './globals.css'
-import { AlignJustify, LogOut } from 'lucide-react'
+
+import { Header } from '../components/Header'
 
 export const metadata = {
   title: 'Recipes Bank',
@@ -9,20 +10,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className='bg-white h-full'>
-        <header className='h-20 bg-sky-700'>
-          <button className='bg-none border-none'>
-            <AlignJustify/>
-          </button>
-          <span>Bem vindo, rheineck!</span>
-          <button className='bg-none border-none'>
-            <LogOut />
-          </button>
-        </header>
+      <body className='max-h-fit flex flex-col'>
+        <Header />
         {children}
         <footer className='h-20 mb-0 bg-sky-700 font-roboto-400'>
-          <span>2023 - Recipe Bank</span>
-          <span>Feito por Raphael Gilioli Heineck</span>
+          <div>
+            <span>2023 - Recipe Bank</span>
+            <span>Feito por Raphael Gilioli Heineck</span>
+          </div>
         </footer>
       </body>
     </html>
