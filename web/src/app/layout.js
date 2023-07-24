@@ -1,6 +1,7 @@
 import './globals.css'
 
-import { Header } from '../components/Header'
+import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 
 export const metadata = {
   title: 'Recipes Bank',
@@ -10,15 +11,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className='max-h-fit flex flex-col'>
+      <body className='w-screen h-screen bg-white flex flex-col'>
         <Header />
-        {children}
-        <footer className='h-20 mb-0 bg-sky-700 font-roboto-400'>
-          <div>
-            <span>2023 - Recipe Bank</span>
-            <span>Feito por Raphael Gilioli Heineck</span>
-          </div>
-        </footer>
+        <main className='h-screen'>
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   )
