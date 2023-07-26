@@ -1,13 +1,17 @@
+import { Box } from "@/components/Box"
+import { Image } from "next/image"
+
+
 export default function Home() {
   return (
     <div className="grid grid-cols-2 mt-[154px] mx-20">
-      <div className='h-[447px] w-[482px] bg-zinc-400 rounded-lg'>
-        <h1>Hello World</h1>
-      </div>
+      <Box title='Favoritas' height='447px' width='482px'>
+        
+      </Box>
 
-      <div className='h-[447px] w-[728px] bg-zinc-400 rounded-lg'>
-        <h1>Hello World</h1>
-      </div>
+      <Box title='Receitas' height='447px' width='728px' margin='-50px'>
+
+      </Box>
     </div>
   )
 }

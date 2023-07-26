@@ -2,7 +2,7 @@ import { AlignJustify, LogOut } from 'lucide-react'
 
 export function Header () {
   return (
-    <header className='h-20 bg-sky-700 p-6 flex justify-between items-center'>
+    <header className='h-20 w-full bg-sky-700 px-52 p-6 flex items-center justify-between'>
       <div>
         <button className='bg-none border-none'>
           <AlignJustify className='h-5 w-5'/>

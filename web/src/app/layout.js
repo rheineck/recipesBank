@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className='w-screen h-screen bg-white flex flex-col'>
         <Header />
-        <main className='h-screen'>
+        <main className='h-screen px-52'>
           {children}
         </main>
         <Footer />
